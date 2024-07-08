@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "TestingBenchmark"
 include(":app")
- 
+include(":app-macrobenchmark")
