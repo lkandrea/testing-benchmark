@@ -27,7 +27,7 @@ class FrameTimingBenchmark {
     val benchmarkRule = MacrobenchmarkRule()
 
     @Test
-    fun startup() = benchmarkRule.measureRepeated(
+    fun frameTiming() = benchmarkRule.measureRepeated(
         packageName = "com.example.testingbenchmark",
         metrics = listOf(FrameTimingMetric()),
         iterations = 20,

@@ -29,7 +29,7 @@ class MemoryUsageBenchmark {
 
     @OptIn(ExperimentalMetricApi::class)
     @Test
-    fun startup() = benchmarkRule.measureRepeated(
+    fun memoryUsage() = benchmarkRule.measureRepeated(
         packageName = "com.example.testingbenchmark",
         metrics = listOf(MemoryUsageMetric(MemoryUsageMetric.Mode.Max)),
         iterations = 20,
